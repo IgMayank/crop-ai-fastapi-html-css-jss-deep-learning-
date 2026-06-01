@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Crop Health Monitor</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+
+
+<body>
+
+    <div class="app">
+
+        <div class="sidebar">
+
+            <h2>Crop AI</h2>
+
+            <button id="dashboardBtn">
+                Dashboard
+            </button>
+
+            <button id="predictPageBtn">
+                Predict
+            </button>
+
+            <button id="historyBtn">
+                History
+            </button>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+        <div class="main-content">
+
+    <h1>
+        AI Crop Disease Detection
+    </h1>
+
+    <div class="stats-container">
+
+        <div class="card">
+
+            <h3>
+                Total Predictions
+            </h3>
+
+            <p id="totalPredictions">
+                0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Healthy
+            </h3>
+
+            <p id="healthyCount">
+                0
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>
+                Diseased
+            </h3>
+
+            <p id="diseasedCount">
+                0
+            </p>
+
+        </div>
+
+    </div>
+            <div id="dropArea">
+
+                <p>
+                    Drag & Drop Images Here
+                </p>
+
+                <span>or</span>
+
+                <button type="button" id="browseBtn">
+                    Browse Images
+                </button>
+
+                <input
+                    type="file"
+                    id="imageInput"
+                    multiple
+                    hidden
+                >
+
+            </div>
+
+            <div id="previewContainer"></div>
+
+            <button type="button" id="predictBtn">
+                Predict Diseases
+            </button>
+            <div id = "predictionStatus"></div>
+
+            <div id="resultSection">
+
+    <h2>
+        Prediction Result
+    </h2>
+
+    <div id="result">
+
+    </div>
+
+</div>
+            <div id = "historySection">
+                <h2>Prediction History</h2>
+                <div id = "historyContainer">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
