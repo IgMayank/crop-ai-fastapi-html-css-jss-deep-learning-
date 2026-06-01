@@ -1,0 +1,13 @@
+env/
+venv/
+.venv/
+
+datasets/
+
+__pycache__/
+*.pyc
+
+.git/
+.vscode/
+
+crop_monitor.db
