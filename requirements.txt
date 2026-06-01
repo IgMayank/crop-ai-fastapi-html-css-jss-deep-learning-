@@ -3,7 +3,7 @@ uvicorn
 sqlalchemy
 python-multipart
 python-jose
-passlib[bcrypt]
+passlib==1.7.4
 pillow
 torch
 torchvision
