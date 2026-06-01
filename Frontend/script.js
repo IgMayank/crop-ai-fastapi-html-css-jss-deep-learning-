@@ -30,7 +30,7 @@ async function loadDashboard(){
 
         const response =
             await fetch(
-                "http://127.0.0.1:8000/my-history",
+                "https://crop-0tmt.onrender.com/my-history",
                 {
                     headers:{
                         "Authorization":
@@ -210,7 +210,7 @@ predictBtn.addEventListener(
             
 
             const response = await fetch(
-                "http://127.0.0.1:8000/predict",
+                "https://crop-0tmt.onrender.com/predict",
                 {
                     method: "POST",
 

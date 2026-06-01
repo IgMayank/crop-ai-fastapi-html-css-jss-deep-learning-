@@ -50,7 +50,7 @@ registerBtn.addEventListener(
 
 const response =
     await fetch(
-        "http://127.0.0.1:8000/register",
+        "https://crop-0tmt.onrender.com/register",
         {
             method:"POST",
             body: formData
