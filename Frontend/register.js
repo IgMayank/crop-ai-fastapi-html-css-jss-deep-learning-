@@ -58,13 +58,16 @@ const response =
     );
     const data =
     await response.json();
+    console.log(data);
 
 if(!response.ok){
 
     document.getElementById(
         "registerMessage"
     ).innerText =
-        data.detail;
+        data.detail?.[0]?.msg ||
+        data.detail ||
+        "Registration Failed";
 
     return;
 }
