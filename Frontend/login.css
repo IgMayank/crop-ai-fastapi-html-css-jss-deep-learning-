@@ -22,6 +22,21 @@ body{
         #0f172a
     );
 }
+.login-container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.render-notice{
+    color:#facc15;
+    font-size:15px;
+    font-weight:600;
+    text-align:center;
+}
 
 .login-container{
 
